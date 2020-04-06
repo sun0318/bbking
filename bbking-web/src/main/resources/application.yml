@@ -1,0 +1,42 @@
+spring:
+  datasource:
+    # jdbc:mysql://localhost:3306/test 数据库地址
+    url: jdbc:mysql://120.79.197.112:3306/bbking?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root # 数据库用户名
+    password: ct950916  # 数据库密码
+    driver-class-name: com.mysql.jdbc.Driver  # 数据库驱动
+  #profiles:
+    #active: dev
+
+  application:
+    name:springboot-rabbitmq
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirms: true
+    virtual-host: /
+
+  thymeleaf:
+    cache: false
+
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    timeout: 2000s
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: -1ms
+    lettuce:
+      shutdown-timeout: 100ms
+
+mybatis:
+  mapper-locations : classpath*:mybatis/*.xml
+  type-aliases-package : com.family.bbkingdao.entity
+
+logging:
+  config: bbking-web/src/main/resources/logback.xml
