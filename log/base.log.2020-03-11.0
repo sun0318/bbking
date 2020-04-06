@@ -1,0 +1,1325 @@
+2020-03-11 08:25:16,119 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 16008 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 08:25:16,134 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 08:25:16,134 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 08:27:57,351 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 19184 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 08:27:57,351 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 08:27:57,367 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 08:28:01,736 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 4.889 seconds (JVM running for 6.732)
+2020-03-11 08:31:50,982 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 08:31:51,011 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 08:31:51,079 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 08:31:51,208 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 08:31:51,209 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 08:31:51,253 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 08:31:51,255 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:31:51,255 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 08:31:51,315 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 08:31:51,316 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:31:51,317 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 08:31:51,367 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 08:31:51,368 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:31:51,368 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 08:31:51,431 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 08:31:51,477 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 08:31:51,478 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 08:31:51,517 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 08:31:51,602 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 08:31:51,602 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 08:31:51,645 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 08:31:51,646 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:31:51,646 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 08:31:51,716 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 08:31:51,718 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:31:51,718 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 08:31:51,761 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 08:31:51,762 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:31:51,763 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 08:31:51,807 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 08:31:59,415 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 08:31:59,417 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 08:31:59,459 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 08:31:59,598 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 08:31:59,601 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 08:31:59,639 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 08:31:59,642 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:31:59,644 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 08:31:59,681 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 08:31:59,682 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:31:59,682 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 08:31:59,737 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 08:31:59,738 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:31:59,739 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 08:31:59,788 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 08:31:59,835 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' 
+2020-03-11 08:31:59,836 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-03-11 08:31:59,875 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 08:32:32,924 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 10088 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 08:32:32,924 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 08:32:32,924 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 08:32:37,740 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.614 seconds (JVM running for 7.666)
+2020-03-11 08:32:46,563 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 08:32:46,586 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 08:32:46,662 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 08:32:46,978 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 08:32:46,979 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 08:32:47,135 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 08:32:47,137 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:32:47,138 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 08:32:47,187 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 08:32:47,188 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:32:47,189 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 08:32:47,263 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 08:32:47,264 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:32:47,265 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 08:32:47,383 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 08:32:47,425 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 08:32:47,426 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 08:32:47,475 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 08:32:47,570 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 08:32:47,570 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 08:32:47,760 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 08:32:47,761 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:32:47,761 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 08:32:47,804 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 08:32:47,805 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:32:47,805 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 08:32:47,950 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 08:32:47,952 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:32:47,953 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 08:32:48,134 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 08:32:52,319 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 08:32:52,322 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 08:32:52,366 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 08:32:52,625 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 08:32:52,628 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 08:32:52,877 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 08:32:52,879 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:32:52,879 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 08:32:52,971 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 08:32:52,971 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:32:52,972 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 08:32:53,071 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 08:32:53,072 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 08:32:53,073 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 08:32:53,236 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 09:14:37,984 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 3336 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 09:14:37,988 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 09:14:37,988 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 09:14:42,471 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.113 seconds (JVM running for 6.753)
+2020-03-11 09:14:50,664 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 09:14:50,688 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 09:14:50,726 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 09:14:50,813 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 09:14:50,814 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 09:14:50,845 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 09:14:50,848 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 09:14:50,849 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 09:14:50,890 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 09:14:50,893 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 09:14:50,896 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 09:14:50,928 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 09:14:50,930 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 09:14:50,931 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 09:14:50,967 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 09:14:51,005 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 09:14:51,006 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 09:14:51,037 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 09:14:51,099 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 09:14:51,100 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 09:14:51,136 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 09:14:51,137 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 09:14:51,138 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 09:14:51,167 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 09:14:51,168 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 09:14:51,168 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 09:14:51,202 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 09:14:51,203 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 09:14:51,205 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 09:14:51,235 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 09:18:00,539 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 11952 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 09:18:00,539 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 09:18:00,539 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 09:18:04,720 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 4.733 seconds (JVM running for 6.134)
+2020-03-11 09:18:16,609 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 09:18:16,630 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 09:18:16,683 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 09:18:16,788 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 09:18:16,791 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 09:18:16,824 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 09:18:16,830 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 09:18:16,832 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 09:18:16,869 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 09:18:16,871 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 09:18:16,874 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 09:18:16,910 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 09:18:16,913 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 09:18:16,915 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 09:18:16,945 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 09:18:16,991 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 09:18:16,993 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 09:18:17,025 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 09:18:17,081 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 09:18:17,082 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 09:18:17,113 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 09:18:17,114 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 09:18:17,115 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 09:18:17,144 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 09:18:17,145 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 09:18:17,145 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 09:18:17,179 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 09:18:17,179 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 09:18:17,180 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 09:18:17,213 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 10:37:32,109 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 20452 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 10:37:32,113 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 10:37:32,113 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 10:37:37,388 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.935 seconds (JVM running for 7.714)
+2020-03-11 12:31:14,194 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 12420 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 12:31:14,194 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 12:31:14,194 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 12:34:55,700 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 1956 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 12:34:55,700 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 12:34:55,700 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 12:35:00,526 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.389 seconds (JVM running for 6.827)
+2020-03-11 12:37:18,147 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 12412 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 12:37:18,147 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 12:37:18,147 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 12:37:22,804 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.204 seconds (JVM running for 6.688)
+2020-03-11 12:37:29,824 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 12:37:29,849 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 12:37:29,956 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 12:37:29,959 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 12:37:29,960 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 12:37:30,027 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 12:37:30,034 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:37:30,036 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 12:37:30,113 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 12:37:30,116 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:37:30,117 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 12:37:30,164 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 12:37:30,169 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:37:30,171 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 12:37:30,204 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 12:37:30,215 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 12:37:30,216 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 12:37:30,296 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 12:37:30,297 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 12:37:30,297 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 12:37:30,381 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 12:37:30,384 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:37:30,385 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 12:37:30,462 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 12:37:30,465 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:37:30,467 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 12:37:30,583 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 12:37:30,584 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:37:30,585 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 12:37:30,659 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 12:45:54,302 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 10556 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 12:45:54,302 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 12:45:54,302 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 12:45:59,037 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.281 seconds (JVM running for 6.768)
+2020-03-11 12:46:19,958 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 12:46:20,002 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 12:46:20,062 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 12:46:20,064 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 12:46:20,065 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 12:46:20,119 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 12:46:20,121 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:46:20,121 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 12:46:20,154 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 12:46:20,154 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:46:20,155 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 12:46:20,184 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 12:46:20,185 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:46:20,185 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 12:46:20,225 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 12:46:20,230 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 12:46:20,230 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 12:46:20,256 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 12:46:20,257 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 12:46:20,257 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 12:46:20,286 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 12:46:20,286 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:46:20,287 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 12:46:20,352 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 12:46:20,352 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:46:20,353 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 12:46:20,394 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 12:46:20,394 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:46:20,394 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 12:46:20,431 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 12:47:52,375 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 12:47:52,376 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 12:47:52,408 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 12:47:52,411 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 12:47:52,412 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 12:47:52,452 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 12:47:52,455 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:47:52,456 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 12:47:52,486 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 12:47:52,486 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:47:52,487 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 12:47:52,526 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 12:47:52,527 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:47:52,528 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 12:47:52,554 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 12:47:52,555 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 12:47:52,556 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 12:47:52,582 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 12:47:52,585 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 12:47:52,585 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 12:47:52,617 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 12:47:52,617 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:47:52,618 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 12:47:52,649 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 12:47:52,650 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:47:52,650 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 12:47:52,685 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 12:47:52,685 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 12:47:52,686 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 12:47:52,720 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 13:01:22,783 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 20316 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 13:01:22,787 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 13:01:22,787 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 13:01:27,541 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.389 seconds (JVM running for 6.97)
+2020-03-11 13:01:37,369 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 13:01:37,409 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 13:01:37,461 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 13:01:37,464 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 13:01:37,466 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 13:01:37,498 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 13:01:37,502 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:01:37,503 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 13:01:37,540 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 13:01:37,542 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:01:37,542 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 13:01:37,571 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 13:01:37,573 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:01:37,574 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 13:01:37,608 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 13:01:37,620 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 13:01:37,621 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 13:01:37,651 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 13:01:37,651 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 13:01:37,652 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 13:01:37,681 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 13:01:37,682 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:01:37,682 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 13:01:37,714 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 13:01:37,716 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:01:37,718 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 13:01:37,748 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 13:01:37,750 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:01:37,751 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 13:01:37,781 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 13:02:01,725 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 13:02:01,726 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 13:02:01,765 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 13:02:01,766 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 13:02:01,766 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 13:02:01,794 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 13:02:01,795 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:02:01,795 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 13:02:01,824 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 13:02:01,825 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:02:01,825 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 13:02:01,855 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 13:02:01,856 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:02:01,857 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 13:02:01,886 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 13:02:01,887 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 13:02:01,888 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 13:02:01,918 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 13:02:01,920 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 13:02:01,921 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 13:02:01,950 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 13:02:01,951 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:02:01,952 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 13:02:01,981 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 13:02:01,982 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:02:01,983 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 13:02:02,013 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 13:02:02,014 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:02:02,014 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 13:02:02,043 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 13:02:53,981 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 13:02:53,982 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 13:02:54,022 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 13:02:54,023 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 13:02:54,023 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 13:02:54,052 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 13:02:54,053 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:02:54,054 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 13:02:54,084 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 13:02:54,085 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:02:54,086 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 13:02:54,114 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 13:02:54,115 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:02:54,115 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 13:02:54,144 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 13:02:54,145 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 13:02:54,146 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 13:02:54,176 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 13:02:54,177 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 13:02:54,178 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 13:02:54,210 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 13:02:54,211 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:02:54,212 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 13:02:54,241 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 13:02:54,242 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:02:54,242 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 13:02:54,272 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 13:02:54,273 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 13:02:54,273 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 13:02:54,302 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:00:15,326 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 8352 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 15:00:15,330 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:00:15,331 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 15:00:19,908 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.151 seconds (JVM running for 6.668)
+2020-03-11 15:03:09,855 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 11604 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 15:03:09,858 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:03:09,859 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 15:03:14,270 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 4.958 seconds (JVM running for 6.456)
+2020-03-11 15:03:30,331 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:03:30,368 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:03:30,456 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:03:30,651 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:03:30,652 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:03:30,678 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:03:30,680 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:03:30,681 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:03:30,833 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:03:30,834 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:03:30,834 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:03:30,861 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:03:30,862 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:03:30,863 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:03:30,891 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:03:31,034 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:03:31,035 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:03:31,070 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:03:31,121 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:03:31,122 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:03:31,270 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:03:31,272 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:03:31,273 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:03:31,302 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:03:31,303 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:03:31,303 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:03:31,333 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:03:31,337 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:03:31,339 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:03:31,467 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:18:21,375 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 12152 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 15:18:21,379 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:18:21,380 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 15:18:26,040 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.266 seconds (JVM running for 6.749)
+2020-03-11 15:20:53,547 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 8008 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 15:20:53,550 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:20:53,551 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 15:21:05,143 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 12.147 seconds (JVM running for 13.606)
+2020-03-11 15:25:48,261 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 8820 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 15:25:48,264 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:25:48,265 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 15:25:53,583 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.908 seconds (JVM running for 7.63)
+2020-03-11 15:26:56,016 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 18728 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 15:26:56,021 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:26:56,021 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 15:27:00,596 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.252 seconds (JVM running for 6.828)
+2020-03-11 15:27:14,681 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:27:14,722 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:27:14,764 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:27:14,864 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:27:14,865 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:27:14,889 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:27:14,890 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:27:14,891 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:27:14,923 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:27:14,923 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:27:14,924 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:27:14,950 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:27:14,951 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:27:14,951 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:27:14,978 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:27:15,005 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:27:15,007 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:27:15,032 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:27:15,085 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:27:15,087 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:27:15,146 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:27:15,148 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:27:15,150 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:27:15,182 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:27:15,185 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:27:15,188 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:27:15,217 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:27:15,221 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:27:15,223 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:27:15,255 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:28:13,912 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 904 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 15:28:13,915 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:28:13,916 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 15:28:18,189 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 4.842 seconds (JVM running for 6.331)
+2020-03-11 15:28:40,413 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:28:40,436 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:28:40,485 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:28:40,562 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:28:40,564 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:28:40,600 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:28:40,607 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:28:40,609 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:28:40,640 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:28:40,642 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:28:40,642 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:28:40,676 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:28:40,679 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:28:40,682 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:28:40,739 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:28:40,783 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:28:40,783 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:28:40,830 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:28:40,876 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:28:40,877 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:28:40,907 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:28:40,910 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:28:40,912 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:28:40,947 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:28:40,951 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:28:40,952 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:28:40,983 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:28:40,984 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:28:40,985 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:28:41,010 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:31:02,882 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:31:02,884 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:31:02,908 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:31:03,036 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:03,037 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:31:03,069 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:31:03,071 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:03,071 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:31:03,106 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:31:03,107 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:03,107 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:31:03,138 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:31:03,140 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:03,141 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:31:03,168 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:31:03,193 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:31:03,194 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:31:03,229 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:31:03,275 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:03,276 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:31:03,302 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:31:03,303 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:03,304 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:31:03,331 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:31:03,332 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:03,332 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:31:03,388 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:31:03,389 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:03,389 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:31:03,415 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:31:31,499 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:31:31,499 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:31:31,525 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:31:31,607 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:31,609 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:31:31,640 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:31:31,641 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:31,642 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:31:31,672 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:31:31,674 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:31,674 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:31:31,726 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:31:31,728 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:31,730 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:31:31,771 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:31:31,798 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:31:31,800 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:31:31,831 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:31:31,887 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:31,888 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:31:31,921 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:31:31,922 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:31,923 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:31:31,956 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:31:31,957 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:31,958 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:31:31,986 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:31:31,989 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:31,991 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:31:32,025 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:31:48,172 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:31:48,172 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:31:48,200 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:31:48,273 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:48,273 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:31:48,300 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:31:48,301 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:48,301 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:31:48,331 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:31:48,333 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:48,334 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:31:48,361 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:31:48,362 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:48,363 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:31:48,400 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:31:48,425 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:31:48,426 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:31:48,452 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:31:48,504 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:48,505 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:31:48,537 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:31:48,538 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:48,539 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:31:48,610 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:31:48,611 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:48,611 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:31:48,637 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:31:48,638 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:31:48,638 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:31:48,668 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:32:02,027 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:32:02,027 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:32:02,057 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:32:02,133 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:32:02,135 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:32:02,177 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:32:02,179 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:32:02,181 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:32:02,261 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:32:02,262 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:32:02,263 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:32:02,291 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:32:02,293 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:32:02,294 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:32:02,360 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:32:02,389 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:32:02,390 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:32:02,432 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:32:02,480 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:32:02,481 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:32:02,506 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:32:02,507 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:32:02,507 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:32:02,535 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:32:02,536 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:32:02,536 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:32:02,570 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:32:02,571 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:32:02,572 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:32:02,599 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:35:43,764 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:35:43,765 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:35:43,804 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:35:43,945 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:35:43,946 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:35:44,005 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:35:44,006 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:35:44,006 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:35:44,035 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:35:44,037 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:35:44,038 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:35:44,072 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:35:44,074 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:35:44,075 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:35:44,106 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:35:44,134 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:35:44,135 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:35:44,165 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:35:44,238 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:35:44,240 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:35:44,268 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:35:44,271 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:35:44,273 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:35:44,304 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:35:44,307 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:35:44,309 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:35:44,345 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:35:44,348 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:35:44,351 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:35:44,387 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:35:48,944 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:35:48,944 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:35:49,003 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:35:49,090 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:35:49,090 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:35:49,147 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:35:49,148 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:35:49,148 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:35:49,175 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:35:49,176 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:35:49,176 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:35:49,201 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:35:49,202 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:35:49,202 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:35:49,228 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:35:49,253 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:35:49,253 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:35:49,281 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:35:49,331 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:35:49,331 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:35:49,365 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:35:49,365 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:35:49,366 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:35:49,392 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:35:49,393 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:35:49,394 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:35:49,424 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:35:49,426 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:35:49,427 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:35:49,464 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:36:50,719 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:36:50,719 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:36:50,750 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:36:50,854 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:36:50,855 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:36:50,892 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:36:50,895 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:36:50,897 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:36:50,924 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:36:50,925 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:36:50,927 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:36:50,956 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:36:50,958 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:36:50,959 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:36:50,996 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:36:51,021 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:36:51,022 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:36:51,051 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:36:51,176 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:36:51,177 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:36:51,205 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:36:51,206 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:36:51,207 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:36:51,238 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:36:51,239 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:36:51,239 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:36:51,281 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:36:51,282 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:36:51,282 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:36:51,327 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:37:43,734 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 8044 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 15:37:43,738 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:37:43,739 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 15:37:48,294 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.121 seconds (JVM running for 6.771)
+2020-03-11 15:38:16,421 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:38:16,444 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:38:16,479 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:38:16,558 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:38:16,559 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:38:16,591 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:38:16,593 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:38:16,593 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:38:16,623 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:38:16,625 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:38:16,626 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:38:16,661 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:38:16,663 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:38:16,665 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:38:16,704 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:38:16,742 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:38:16,743 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:38:16,773 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:38:16,929 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:38:16,930 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:38:17,028 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:38:17,030 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:38:17,030 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:38:17,062 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:38:17,063 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:38:17,063 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:38:17,093 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:38:17,094 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:38:17,094 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:38:17,126 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:38:21,456 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:38:21,457 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:38:21,482 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:38:21,562 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:38:21,563 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:38:21,590 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:38:21,592 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:38:21,593 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:38:21,625 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:38:21,628 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:38:21,630 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:38:21,665 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:38:21,668 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:38:21,670 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:38:21,706 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:38:21,731 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:38:21,732 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:38:21,763 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:38:21,822 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:38:21,824 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:38:21,854 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:38:21,856 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:38:21,858 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:38:21,890 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:38:21,893 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:38:21,894 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:38:21,934 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:38:21,936 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:38:21,937 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:38:21,965 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:41:36,548 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 13260 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 15:41:36,551 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:41:36,551 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 15:41:40,942 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.001 seconds (JVM running for 6.553)
+2020-03-11 15:42:06,456 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:42:06,477 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:42:06,531 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:42:06,616 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:42:06,618 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:42:06,651 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:42:06,657 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:42:06,658 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:42:06,699 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:42:06,702 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:42:06,705 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:42:06,737 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:42:06,740 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:42:06,741 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:42:06,770 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:42:06,809 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:42:06,811 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:42:06,837 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:42:06,901 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:42:06,902 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:42:06,931 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:42:06,932 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:42:06,932 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:42:06,958 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:42:06,959 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:42:06,960 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:42:06,986 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:42:06,987 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:42:06,988 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:42:07,018 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:43:55,584 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 21340 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 15:43:55,587 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:43:55,588 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 15:44:00,058 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.038 seconds (JVM running for 6.487)
+2020-03-11 15:44:11,374 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:44:11,398 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:44:11,501 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:44:11,631 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:44:11,632 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:44:11,667 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:44:11,669 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:44:11,669 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:44:11,701 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:44:11,702 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:44:11,702 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:44:11,734 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:44:11,735 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:44:11,736 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:44:11,779 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:44:11,813 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:44:11,814 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:44:11,848 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:44:11,926 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:44:11,927 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:44:11,956 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:44:11,957 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:44:11,957 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:44:12,001 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:44:12,003 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:44:12,005 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:44:12,043 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:44:12,047 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:44:12,050 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:44:12,084 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:48:50,642 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 2672 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 15:48:50,645 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:48:50,646 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 15:48:55,028 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 4.926 seconds (JVM running for 6.415)
+2020-03-11 15:49:04,317 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:49:04,338 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:49:04,378 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:49:04,482 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:49:04,485 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:49:04,520 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:49:04,523 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:49:04,525 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:49:04,564 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:49:04,566 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:49:04,567 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:49:04,606 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:49:04,608 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:49:04,609 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:49:04,652 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:49:04,704 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:49:04,706 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:49:04,739 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:49:04,803 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:49:04,803 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:49:04,835 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:49:04,836 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:49:04,837 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:49:04,875 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:49:04,876 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:49:04,876 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:49:04,908 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:49:04,910 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:49:04,911 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:49:04,947 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:51:26,443 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 17628 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 15:51:26,446 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:51:26,446 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 15:51:30,776 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 4.885 seconds (JVM running for 6.386)
+2020-03-11 15:51:47,697 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:51:47,720 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:51:47,813 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:51:47,902 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:51:47,903 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:51:47,927 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:51:47,929 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:51:47,929 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:51:47,952 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:51:47,954 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:51:47,955 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:51:47,984 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:51:47,984 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:51:47,985 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:51:48,021 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:51:48,062 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:51:48,063 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:51:48,095 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:51:48,198 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:51:48,199 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:51:48,224 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:51:48,225 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:51:48,225 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:51:48,247 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:51:48,247 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:51:48,248 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:51:48,274 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:51:48,276 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:51:48,278 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:51:48,306 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:56:45,890 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 8324 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 15:56:45,894 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:56:45,895 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 15:56:50,237 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 4.961 seconds (JVM running for 6.418)
+2020-03-11 15:57:01,322 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:57:01,345 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:57:01,393 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:57:01,487 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:01,489 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:57:01,516 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:57:01,520 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:01,521 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:57:01,552 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:57:01,555 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:01,556 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:57:01,587 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:57:01,589 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:01,590 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:57:01,615 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:57:01,685 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:57:01,686 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:57:01,718 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:57:01,782 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:01,783 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:57:01,814 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:57:01,815 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:01,816 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:57:01,838 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:57:01,839 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:01,840 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:57:01,872 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:57:01,878 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:01,879 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:57:01,905 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:57:06,590 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:57:06,591 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:57:06,625 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:57:06,702 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:06,703 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:57:06,726 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:57:06,729 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:06,729 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:57:06,755 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:57:06,756 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:06,756 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:57:06,786 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:57:06,787 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:06,788 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:57:06,817 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:57:06,852 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:57:06,853 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:57:06,921 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:57:06,981 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:06,982 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:57:07,004 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:57:07,004 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:07,005 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:57:07,034 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:57:07,034 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:07,035 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:57:07,059 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:57:07,060 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:07,061 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:57:07,085 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:57:12,257 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:57:12,258 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:57:12,292 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:57:12,373 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:12,375 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:57:12,401 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:57:12,403 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:12,405 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:57:12,429 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:57:12,430 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:12,431 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:57:12,460 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:57:12,463 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:12,464 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:57:12,494 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:57:12,527 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:57:12,528 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:57:12,561 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:57:12,629 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:12,630 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:57:12,656 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:57:12,658 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:12,659 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:57:12,680 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:57:12,681 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:12,684 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:57:12,707 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:57:12,708 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:12,708 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:57:12,757 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:57:16,492 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:57:16,493 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:57:16,524 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:57:16,607 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:16,607 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:57:16,633 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:57:16,634 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:16,634 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:57:16,659 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:57:16,660 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:16,661 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:57:16,692 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:57:16,692 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:16,693 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:57:16,724 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:57:16,755 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:57:16,756 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:57:16,787 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:57:16,865 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:16,866 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:57:16,892 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:57:16,895 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:16,897 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:57:16,928 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:57:16,929 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:16,930 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:57:16,956 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:57:16,957 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:57:16,958 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:57:16,984 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:57:49,471 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 8728 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 15:57:49,475 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:57:49,475 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 15:57:53,676 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 4.747 seconds (JVM running for 6.277)
+2020-03-11 15:58:07,043 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:58:07,065 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:58:07,134 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:58:07,234 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:58:07,235 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:58:07,323 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:58:07,330 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:58:07,332 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:58:07,371 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 15:58:07,373 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:58:07,374 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:58:07,434 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:58:07,437 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:58:07,438 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:58:07,475 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:58:07,520 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 15:58:07,521 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 15:58:07,553 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 15:58:07,617 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 15:58:07,617 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 15:58:07,651 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 15:58:07,653 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:58:07,654 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 15:58:07,688 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 15:58:07,689 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:58:07,690 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 15:58:07,730 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 15:58:07,733 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 15:58:07,735 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 15:58:07,775 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 16:02:38,043 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 15300 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 16:02:38,047 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 16:02:38,047 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 16:02:42,880 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.423 seconds (JVM running for 7.053)
+2020-03-11 16:02:50,670 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 16:02:50,691 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 16:02:50,752 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 16:02:50,855 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 16:02:50,857 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 16:02:50,894 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:02:50,901 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:02:50,902 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 16:02:50,944 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 16:02:50,946 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:02:50,947 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 16:02:50,976 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 16:02:50,977 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:02:50,977 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 16:02:51,005 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 16:02:51,057 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 16:02:51,058 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 16:02:51,094 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 16:02:51,157 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 16:02:51,158 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 16:02:51,182 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:02:51,184 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:02:51,184 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 16:02:51,207 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 16:02:51,208 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:02:51,208 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 16:02:51,243 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 16:02:51,245 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:02:51,246 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 16:02:51,275 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 16:02:55,920 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 16:02:55,921 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 16:02:55,957 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 16:02:56,088 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 16:02:56,090 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 16:02:56,145 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:02:56,148 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:02:56,150 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 16:02:56,193 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 16:02:56,197 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:02:56,199 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 16:02:56,238 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 16:02:56,242 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:02:56,244 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 16:02:56,300 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 16:03:03,859 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' 
+2020-03-11 16:03:03,860 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-03-11 16:03:03,863 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' 
+2020-03-11 16:03:03,863 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-03-11 16:03:03,894 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:03:03,894 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:04:03,945 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 17504 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 16:04:03,948 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 16:04:03,949 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 16:04:08,350 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 4.939 seconds (JVM running for 6.464)
+2020-03-11 16:04:37,071 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 16:04:37,093 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 16:04:37,129 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 16:04:37,203 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 16:04:37,203 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 16:04:37,232 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:04:37,234 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:04:37,235 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 16:04:37,278 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 16:04:37,281 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:04:37,283 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 16:04:37,314 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 16:04:37,316 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:04:37,317 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 16:04:37,349 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 16:04:37,376 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 16:04:37,376 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 16:04:37,427 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 16:04:37,481 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 16:04:37,483 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 16:04:37,511 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:04:37,514 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:04:37,515 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 16:04:37,551 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 16:04:37,553 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:04:37,555 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 16:04:37,609 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 16:04:37,614 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:04:37,616 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 16:04:37,642 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 16:15:21,626 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' 
+2020-03-11 16:15:21,629 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-03-11 16:15:21,668 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:15:21,735 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:21,736 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 11(String)
+2020-03-11 16:15:21,762 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-03-11 16:15:21,763 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:21,764 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 16:15:21,790 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 16:15:21,791 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:21,791 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 16:15:21,816 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 16:15:32,328 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' 
+2020-03-11 16:15:32,328 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-03-11 16:15:32,353 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:15:32,441 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:32,443 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 11(String)
+2020-03-11 16:15:32,467 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-03-11 16:15:32,469 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:32,470 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 16:15:32,500 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 16:15:32,501 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:32,503 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 16:15:32,527 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 16:15:38,343 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' 
+2020-03-11 16:15:38,344 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-03-11 16:15:38,385 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:15:38,462 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:38,463 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 11(String)
+2020-03-11 16:15:38,488 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-03-11 16:15:38,490 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:38,490 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 16:15:38,515 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 16:15:38,516 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:38,517 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 16:15:38,547 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 16:15:44,942 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 16:15:44,942 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 16:15:44,967 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 16:15:45,052 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:45,053 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 16:15:45,079 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:15:45,080 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:45,080 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 16:15:45,109 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 16:15:45,110 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:45,111 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 16:15:45,140 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 16:15:45,141 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:45,141 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 16:15:45,167 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 16:15:45,190 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 16:15:45,190 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 16:15:45,218 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 16:15:45,264 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:45,265 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 16:15:45,296 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:15:45,299 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:45,301 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 16:15:45,329 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 16:15:45,331 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:45,333 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 16:15:45,364 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 16:15:45,367 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:45,369 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 16:15:45,397 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 16:15:51,407 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 16:15:51,408 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 16:15:51,436 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 16:15:51,510 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:51,513 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 16:15:51,540 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:15:51,542 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:51,544 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 16:15:51,574 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 16:15:51,576 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:51,578 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 16:15:51,607 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 16:15:51,610 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:15:51,612 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 16:15:51,639 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 16:21:18,502 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 5084 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 16:21:18,505 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 16:21:18,506 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 16:21:23,175 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.255 seconds (JVM running for 6.815)
+2020-03-11 16:21:36,755 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 14900 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 16:21:36,758 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 16:21:36,758 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 16:21:41,190 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 4.979 seconds (JVM running for 6.427)
+2020-03-11 16:22:32,259 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 11276 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 16:22:32,263 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 16:22:32,263 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 16:22:36,527 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 4.878 seconds (JVM running for 6.449)
+2020-03-11 16:23:12,386 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 15256 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 16:23:12,390 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 16:23:12,390 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 16:23:16,630 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 4.8 seconds (JVM running for 6.377)
+2020-03-11 16:23:40,593 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 13284 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 16:23:40,596 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 16:23:40,596 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 16:23:45,074 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.087 seconds (JVM running for 6.617)
+2020-03-11 16:25:15,541 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 20656 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 16:25:15,544 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 16:25:15,545 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 16:25:19,772 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 4.819 seconds (JVM running for 6.258)
+2020-03-11 16:25:33,821 INFO (StartupInfoLogger.java:55)- Starting BbkingWebApplication on DESKTOP-H6RNHRR with PID 21244 (E:\project\bbking\bbking-web\target\classes started by 86187 in E:\project\bbking)
+2020-03-11 16:25:33,825 DEBUG (StartupInfoLogger.java:56)- Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 16:25:33,825 INFO (SpringApplication.java:651)- No active profile set, falling back to default profiles: default
+2020-03-11 16:25:38,412 INFO (StartupInfoLogger.java:61)- Started BbkingWebApplication in 5.176 seconds (JVM running for 6.626)
+2020-03-11 16:25:49,244 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 16:25:49,270 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 16:25:49,314 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 16:25:49,404 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 16:25:49,405 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 16:25:49,434 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:25:49,437 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:25:49,438 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 16:25:49,468 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 16:25:49,468 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:25:49,469 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 16:25:49,508 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 16:25:49,510 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:25:49,511 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 16:25:49,536 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 16:25:49,579 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 16:25:49,580 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 16:25:49,630 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 16:25:49,702 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 16:25:49,703 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 16:25:49,728 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:25:49,730 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:25:49,731 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 16:25:49,760 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 16:25:49,762 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:25:49,764 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 16:25:49,794 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 16:25:49,797 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:25:49,799 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 16:25:49,825 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 16:25:54,012 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' 
+2020-03-11 16:25:54,013 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-03-11 16:25:54,051 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:27:21,927 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 16:27:21,928 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 16:27:21,961 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 16:27:22,046 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 16:27:22,047 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 16:27:22,074 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:27:22,075 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:27:22,076 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 16:27:22,100 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 16:27:22,101 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:27:22,101 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 16:27:22,133 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 16:27:22,134 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:27:22,134 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 16:27:22,164 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 16:27:22,193 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' and username = ? 
+2020-03-11 16:27:22,195 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-03-11 16:27:22,261 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-03-11 16:27:22,325 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_user t1 left join u_user_role t2 on t1.id = t2.uid left join u_role t3 on t2.rid = t3.id WHERE t1.id = ? 
+2020-03-11 16:27:22,327 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 15(String)
+2020-03-11 16:27:22,355 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-03-11 16:27:22,356 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:27:22,357 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(String)
+2020-03-11 16:27:22,387 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-03-11 16:27:22,390 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:27:22,392 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(String)
+2020-03-11 16:27:22,432 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-03-11 16:27:22,435 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select t3.* from u_role t1 left join u_role_permission t2 on t1.id = t2.rid left join u_permission t3 on t2.pid = t3.id WHERE t1.id = ? 
+2020-03-11 16:27:22,436 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(String)
+2020-03-11 16:27:22,462 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 16
+2020-03-11 16:27:26,795 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from u_user WHERE status = '1' 
+2020-03-11 16:27:26,795 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-03-11 16:27:26,827 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3

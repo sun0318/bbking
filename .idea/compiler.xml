@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bbking-web" />
+        <module name="bbking-base" />
+        <module name="bbking-service" />
+        <module name="bbking-dao" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bbking" target="1.8" />
+      <module name="bbking-base" target="1.8" />
+      <module name="bbking-dao" target="1.8" />
+      <module name="bbking-service" target="1.8" />
+      <module name="bbking-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="bbking" options="-parameters" />
+      <module name="bbking-base" options="-parameters" />
+      <module name="bbking-dao" options="-parameters" />
+      <module name="bbking-service" options="-parameters" />
+      <module name="bbking-web" options="-parameters" />
+    </option>
+  </component>
+</project>
