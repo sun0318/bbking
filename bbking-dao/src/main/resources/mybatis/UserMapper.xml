@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.family.bbkingdao.mapper.UserMapper">
+    <resultMap type="com.family.bbkingdao.entity.User" id="userResultMap">
+        <!-- 定义主键 ,非常重要。如果是多个字段,则定义多个id -->
+        <!-- property：主键在pojo中的属性名 -->
+        <!-- column：主键在数据库中的列名 -->
+        <id property="id" column="id" />
+        <!-- 定义普通属性 -->
+        <result property="nickname" column="nickname" />
+        <result property="salt" column="salt" />
+        <result property="email" column="email" />
+        <result property="username" column="username" />
+        <result property="password" column="pswd" />
+        <result property="phone" column="phone" />
+        <result property="isvip" column="isvip" />
+        <result property="status" column="status" />
+        <result property="createTime" column="create_time" />
+        <result property="lastLoginTime" column="last_login_time" />
+    </resultMap>
+
+    <select id="getUserList" resultMap="userResultMap">
+       select * from u_user
+       <where>
+           status = '1'
+           <if test="username != null">
+                and username = #{username}
+           </if>
+           <if test="password != null">
+               and pswd = #{password}
+           </if>
+           <if test="phone != null">
+               and phone = #{phone}
+           </if>
+       </where>
+    </select>
+
+    <insert id="addUser" parameterType="com.family.bbkingdao.entity.User">
+        insert u_user(`id`,`username`,`pswd`,`salt`)values(#{id},#{username},#{password},#{salt})
+    </insert>
+</mapper>

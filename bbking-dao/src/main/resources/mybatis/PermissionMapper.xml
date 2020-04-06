@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.family.bbkingdao.mapper.PermissionMapper">
+    <resultMap type="com.family.bbkingdao.entity.Permission" id="permissionResultMap">
+        <!-- 定义主键 ,非常重要。如果是多个字段,则定义多个id -->
+        <!-- property：主键在pojo中的属性名 -->
+        <!-- column：主键在数据库中的列名 -->
+        <id property="id" column="id" />
+        <!-- 定义普通属性 -->
+        <result property="url" column="url" />
+        <result property="name" column="name" />
+    </resultMap>
+
+    <select id="getPermissionListByRole" resultMap="permissionResultMap" parameterType="com.family.bbkingdao.entity.Role">
+        select t3.* from u_role t1
+        left join u_role_permission t2 on t1.id = t2.rid
+        left join u_permission t3 on t2.pid = t3.id
+        <where>
+            <if test="id != null">
+                t1.id = #{id}
+            </if>
+        </where>
+    </select>
+
+</mapper>
