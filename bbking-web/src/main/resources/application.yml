@@ -4,7 +4,7 @@ spring:
     url: jdbc:mysql://120.79.197.112:3306/bbking?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root # 数据库用户名
     password: ct950916  # 数据库密码
-    driver-class-name: com.mysql.jdbc.Driver  # 数据库驱动
+    driver-class-name: com.mysql.cj.jdbc.Driver # 数据库驱动
   #profiles:
     #active: dev
 
